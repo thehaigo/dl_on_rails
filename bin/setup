@@ -35,8 +35,6 @@ chdir APP_ROOT do
   # unless File.exist?('config/database.yml')
   #   cp 'config/database.yml.sample', 'config/database.yml'
   # end
-  download_file('https://preferredjp.box.com/shared/static/o2xip23e3f0knwc5ve78oderuglkf2wt.onnx', './lib/model/VGG16.onnx')
-  download_file('https://raw.githubusercontent.com/HoldenCaulfieldRye/caffe/master/data/ilsvrc12/synset_words.txt', './lib/data/synset_words.txt')
 
   puts "\n== Preparing database =="
   system! 'bin/rails db:setup'
