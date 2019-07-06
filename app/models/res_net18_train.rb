@@ -4,7 +4,7 @@ class ResNet18Train < ActiveType::Object
   attribute :learning_rate, :float, default: 0.05
   attribute :batch_size, :integer, default: 64
   attribute :epoch, :interger, default: 300
-  attribute :out, :string, default: "./lib/weights/weights/resnet18.weights"
+  attribute :out, :string, default: "./lib/weights/resnet18.weights"
 
   attribute :model, :object
   attribute :trainer, :object
