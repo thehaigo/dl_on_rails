@@ -1,0 +1,3 @@
+$(".predict").html(
+  "<ul><% @result.map{|a| a.split(',').last }.each do |score| %><li><%= score %></li><% end %></ul>"
+)

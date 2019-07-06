@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @image.name %>
+</p>
+
+<p>
+  <strong>File:</strong>
+  <%= image_tag(@image.file.url, size:"224x224") %>
+</p>
+<div class="predict">
+
+</div>
+<%= link_to "predict", predict_image_path(@image),remote:true %>
+<br>
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>
